@@ -1,0 +1,19 @@
+<%= form_for @location do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+
+<SCRIPT LANGUAGE=JAVASCRIPT SRC="http://services.postcodeanywhere.co.uk/popups/javascript.aspx?account_code=indiv67130&license_key=yj95-yj42-wr39-nz65"></SCRIPT>
+
+  <p>
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </p>
+  <p>
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
